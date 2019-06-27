@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+	<head>
+		<title>E-mail Signature Generator</title>
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>	
+	</head>
+
+	<body>
+
+ 
+ 		<div class="title">
+ 	 		<br>
+ 	 		<h3><center>EMAIL SIGNATURE GENERATOR</center></h3>
+ 		</div>
+
+    <img class='logo' src='https://i0.wp.com/singapore.makerfaire.com/wp-content/uploads/sites/15/2017/06/sutd-logo-mit-high-res.png?resize=768%2C397&ssl=1' />
+
+ 		<div class="text">
+	 		<p>Our marketing office needs your help!</p>
+
+			 <p>The last email signature was too successful! Now we need to come up with new email signatures!</p>
+			 
+			 <p>Also, if you want to add more DESIGN to your life, check out the <a href="https://fishbiscuit.github.io/degree-name-generator" target="_blank">degree name generator</a></p>
+
+ 		</div>
+ 
+
+		<br>
+ 
+
+		<div class="button">
+			<button onClick="displayImage()">CELEBRATE NOW</button>
+		</div>
+		<div class="container">
+			<img id='image' src="">
+		</div>
+		<script> 
+		function displayImage() {
+      		path = './img/ten_years';
+			//due to liitations of hosting static pages, change this variable with the number of images in the img folder -1
+			images_num = 12
+			var num = Math.floor(Math.random() * images_num);
+			console.log(path+num+".png");
+			var img_tag = document.getElementById("image");
+			img_tag.src = path+num+".png";
+			}
+ 		</script>
+
+ 		<br>
+ 		<br>
+ 		<br>
+ 		<br>
+
+	
+	</body>
+</html>
