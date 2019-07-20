@@ -40,9 +40,12 @@
 
 		<div class="button">
 			<button onClick="displayImage()">CELEBRATE NOW</button>
+			<button onClick="makeShirt()">COMMEMORATE NOW</button>
 		</div>
-		<div class="container">
-			<img id='image' src="">
+		<div class="container" style="position: relative;" >
+			<img id='shirt' src="">
+			<img id='image' width="200" src="">
+			
 		</div>
 		<script> 
 		function displayImage() {
@@ -54,6 +57,13 @@
 			var img_tag = document.getElementById("image");
 			img_tag.src = path+num+".png";
 			}
+		function makeShirt() {
+			var shirt = document.getElementById("shirt");
+			var image = document.getElementById("image");
+			shirt.src = "./shirt.png";
+			shirt.style="position: relative";
+			image.style="position: absolute; margin-top:670px; margin-left:-620px;";
+		}
  		</script>
 
  		<br>
