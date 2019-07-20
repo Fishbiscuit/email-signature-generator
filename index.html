@@ -13,6 +13,8 @@
 		gtag('config', 'UA-142866432-1');
 		</script>
 		<script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	</head>
 
 	<body>
@@ -38,19 +40,18 @@
 		<br>
  
 
-		<div class="button">
+		<div class="button" >
 			<button onClick="displayImage()">CELEBRATE NOW</button>
 			<button onClick="makeShirt()">COMMEMORATE NOW</button>
 		</div>
-		<div class="container" style="position: relative;" >
+		<div class="container" style="position:relative;">
 			<img id='shirt' src="">
-			<img id='image' width="200" src="">
-			
+			<img id='image' width="200" src="">			
 		</div>
 		<script> 
 		function displayImage() {
       		path = './img/ten_years';
-			//due to liitations of hosting static pages, change this variable with the number of images in the img folder -1
+			//due to limitations of hosting static pages, change this variable with the number of images in the img folder -1
 			images_num = 12
 			var num = Math.floor(Math.random() * images_num);
 			console.log(path+num+".png");
@@ -61,8 +62,8 @@
 			var shirt = document.getElementById("shirt");
 			var image = document.getElementById("image");
 			shirt.src = "./shirt.png";
-			shirt.style="position: relative; left:0;";
-			image.style="position: absolute; top:670px; left:400px";
+			shirt.style="position:relative; left:0px;";
+			image.style="position:relative; top:-1043px; margin-left:395px; margin-right: 415px;";
 		}
  		</script>
 
