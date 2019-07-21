@@ -35,6 +35,7 @@ h5 {
     color: #9C123E;
     cursor: pointer;
     padding: 10px 30px;
+	margin: 5px;
 }
 
 .button button:hover {
